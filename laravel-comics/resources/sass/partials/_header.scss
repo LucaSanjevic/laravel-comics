@@ -1,0 +1,67 @@
+header {
+    .header-top {
+      height: 30px;
+      background-color: $color-primary;
+      .container-links {
+        height: 100%;
+        .links {
+          display: flex;
+          justify-content: flex-end;
+          li {
+            a {
+              text-align: center;
+              color: $color-white;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .header-bottom {
+      height: 115px;
+      background-color: $color-white;
+      .menu {
+        height: 100%;
+        @include flex-center-between;
+        .logo {
+          width: 80px;
+          height: 80px;
+          img {
+            width: 100%;
+            cursor:pointer;
+          }
+        }
+        .navbar {
+          .link {
+            padding: 0 15px;
+            font-weight: bold;
+            a {
+              color: $color-secondary;
+            }
+            a:hover {
+              color: $color-primary;
+            }
+          }
+        }
+        .search {
+          border-bottom: 2px solid;
+          border-color: $color-primary;
+          input {
+            width: 110px;
+            text-align: right;
+            outline: none;
+          }
+          i {
+            cursor: pointer;
+          }
+          i:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+    .jumbo {
+      height: 400px;
+      background-repeat: no-repeat;
+    }
+  }
